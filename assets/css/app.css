@@ -58,6 +58,9 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
     opacity: 0;
     background-color: var(--accent-color-green);
     z-index: -1;
@@ -73,10 +76,6 @@ width: 100%;
 max-width: 370px;
 height: 100%;
 margin: 0 auto;
-}
-
-#splashScreen .container h1 {
-
 }
 
 #splashScreen .container h1 figure {
