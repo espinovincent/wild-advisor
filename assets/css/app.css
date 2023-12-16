@@ -24,7 +24,7 @@ html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: red;
+    background-color: var(--accent-color-green);
 }
 
 .wrapperOverflow {
@@ -40,6 +40,14 @@ html, body {
     z-index: 500;
 }
 
+.yellowText {
+    color: var(--accent-color-yellow)
+}
+
+.redText {
+    color: var(--accent-color-red)
+}
+
 
 /* *** ************************************************************************************* *** */
 /* *** * SPLASHSCREEN ********************************************************************** *** */
@@ -51,11 +59,64 @@ html, body {
     right: 0;
     bottom: 0;
     opacity: 0;
-    background: blue;
+    background-color: var(--accent-color-green);
     z-index: -1;
     transition: all 400ms ease-out;
 }
 
+#splashScreen .container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+max-width: 370px;
+height: 100%;
+margin: 0 auto;
+}
+
+#splashScreen .container h1 {
+
+}
+
+#splashScreen .container h1 figure {
+    width: 100%;
+    max-width: 250px;
+}
+
+#splashScreen .container h1 figure figcaption {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    color: var(--light-text-color);
+    text-align: center;
+}
+
+#splashScreen .container h1 figure figcaption span {
+    font-weight: 600;
+}
+
+#splashScreen .container h1 figure img {
+display: block;
+width: 100%;
+max-width: 250px;
+height: auto;
+margin-bottom: 16px;
+}
+
+#splashScreen .container button#enterButton {
+width: 100%;
+max-width: 300px;
+height: 48px;
+font-size: 16px;
+font-weight: 600;
+color: var(--dark-text-color);
+margin: 0 auto;
+border: none;
+border-radius: 48px;
+background: var(--light-background);
+cursor: pointer;
+}
 
 
 /* *** ************************************************************************************* *** */
