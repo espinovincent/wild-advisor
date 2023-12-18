@@ -188,7 +188,6 @@ height: auto;
     opacity: 0;
     background: lime;
     z-index: -1;
-    z-index: 800;
     transition: all 400ms ease-out;
 }
 

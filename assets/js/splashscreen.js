@@ -1,8 +1,4 @@
-let foods = featured = []
-let pos = headline = null
-let radius = 15000
-
-//## 
+//## What to do once the DOM is loaded
 document.addEventListener('DOMContentLoaded', function(){
 
     // Entering main app from Splashcreen
@@ -15,11 +11,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
     }, false)
 
+    // Ask user for position
     resquestPosition()
 
 })
 
-//## 
+//## Use the HTML geolocation to get User's GPS Location
 function resquestPosition() {
 
     // Try HTML5 geolocation.
@@ -42,10 +39,10 @@ function resquestPosition() {
 
 }
 
-//##
+//## Call Google Maps Places API to get up to 20 results from a radius around the GPS position
 function callFooding(pos) {
 
-    const urlAPI = `https://maps.googleapis.com/maps/api/place/search/json?location=${pos.lat},${pos.lng}&radius=${radius}&sensor=false&key=AIzaSyBx0oIHUf6rMkuA3QAF5o_vd9VhoT-YZF0&type=restaurant`
+    const urlAPI = `https://maps.googleapis.com/maps/api/place/search/json?location=${pos.lat},${pos.lng}&radius=${radius}&sensor=false&key=${apiKey}&type=restaurant`
 
 	fetch(urlAPI)
 		.then((response) => {
@@ -55,11 +52,18 @@ function callFooding(pos) {
 			foods = data.results
 
             foods.map(food => {
-                food.food_pic = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=${food.photos[0].photo_reference}&key=AIzaSyBx0oIHUf6rMkuA3QAF5o_vd9VhoT-YZF0`
+                food.food_pic = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=${food.photos[0].photo_reference}&key=${apiKey}`
             })
 
+            // Select randomly the headline
+            // TODO LATER: Get it from recorded items from the BackEnd
             headline = getRandomItem(foods, 1)
+            
+            // Select randomly the featured
+            // TODO LATER: Get them from recorded items from the BackEnd
             featured = getRandomItem(foods, 6)
+            
+            // Construct the Homepage with the gathered datas
             initHomePage()
 
 		})
@@ -69,7 +73,7 @@ function callFooding(pos) {
 
 }
 
-
+//## Pick random item(s) from a list of items
 function getRandomItem(items, num) {
 
     const shuffled = [...items].sort(() => 0.5 - Math.random());
