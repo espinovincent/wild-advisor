@@ -62,9 +62,22 @@ table {
     --light-background: #FFFFFF;
 
 }
-nav.ul {
-    height: 7%;
-    width: 70%;
+.bottom-bar {
+    position: fixed;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%; 
     border-radius: 2rem;
-    background-color: var(--dark-background);
-}
+     }
+
+  .bottom-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
