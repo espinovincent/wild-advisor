@@ -153,7 +153,7 @@ height: auto;
     font-weight: 600;
 }
 
-#splashScreen .container h1 figure img.cover {
+#splashScreen .container h1 figure img {
     display: block;
     width: 100%;
     max-width: 250px;
