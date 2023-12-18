@@ -1,5 +1,6 @@
 let foods = featured = []
 let pos = headline = null
+let radius = 15000
 
 //## 
 document.addEventListener('DOMContentLoaded', function(){
@@ -25,11 +26,11 @@ function resquestPosition() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             (position) => {
+
                 pos = {
                     lat: position.coords.latitude,
                     lng: position.coords.longitude,
                 }
-
                 callFooding(pos)
 
             }
@@ -44,7 +45,7 @@ function resquestPosition() {
 //##
 function callFooding(pos) {
 
-    const urlAPI = `https://maps.googleapis.com/maps/api/place/search/json?location=${pos.lat},${pos.lng}&radius=5000&sensor=false&key=AIzaSyBx0oIHUf6rMkuA3QAF5o_vd9VhoT-YZF0&type=restaurant`
+    const urlAPI = `https://maps.googleapis.com/maps/api/place/search/json?location=${pos.lat},${pos.lng}&radius=${radius}&sensor=false&key=AIzaSyBx0oIHUf6rMkuA3QAF5o_vd9VhoT-YZF0&type=restaurant`
 
 	fetch(urlAPI)
 		.then((response) => {
@@ -59,7 +60,6 @@ function callFooding(pos) {
 
             headline = getRandomItem(foods, 1)
             featured = getRandomItem(foods, 6)
-
             initHomePage()
 
 		})

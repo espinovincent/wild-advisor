@@ -5,43 +5,37 @@ function initHomePage(){
 
     featured.map(feat => {
 
-        /*
-		if (datas.gems > 0) {
-            let imageSrc = 'assets/img/wayback/wayback-gems.png'
+        //
+        let featRating = document.createElement('figcaption')
+            featRating.classList.add('rating')
+            featRating.innerHTML = `<div class="rating-score-${Math.trunc(feat.rating)}">
+                                        <span><img src="assets/images/template/star.svg" class="star" alt="${Math.trunc(feat.rating)}" title="${Math.trunc(feat.rating)}"></span>
+                                        <span>${feat.rating}</span>
+                                    </div>`
 
-			let bannerItems = document.createElement('div')
-				bannerItems.classList.add('pullItems')
-				bannerGemsShards.appendChild(bannerItems)
+        // 
+        let featImage = document.createElement('img')
+            featImage.classList.add('cover')
+            featImage.setAttribute('src', 'assets/images/template/featured-blank.webp')
+            featImage.setAttribute('alt', feat.name)
+            featImage.setAttribute('title', feat.name)
+            featImage.setAttribute('style', `background-image: url(${feat.food_pic})`)
 
-			let bannerGems = document.createElement('img')
-            bannerGems.setAttribute('src', imageSrc)
-				bannerItems.appendChild(bannerGems)
+        // 
+        let featFigure = document.createElement('figure')
+            featFigure.appendChild(featImage)
+            featFigure.appendChild(featRating)
 
-				bannerItems.innerHTML = bannerItems.innerHTML + datas.gems
-		}
+        let featArticle = document.createElement('article')
+            featArticle.appendChild(featFigure)
 
-        
-		if (datas.shards > 0 && banner.saints[0] != undefined) {
-            let imageSrc = 'assets/img/saints/' + banner.saints[0].shard
-            
-			let bannerItems = document.createElement('div')
-				bannerItems.classList.add('pullItems')
-				bannerGemsShards.appendChild(bannerItems)
-
-			let bannerShards = document.createElement('img')
-				bannerShards.setAttribute('src', imageSrc)
-				bannerItems.appendChild(bannerShards)
-
-				bannerItems.innerHTML = bannerItems.innerHTML + datas.shards
-		}
-        */
-
-        let featDiv = document.createElement('div')
+        let featName = document.createElement('h3')
+            featName.textContent = feat.name
+            featArticle.appendChild(featName)
 
         let featItm = document.createElement('li')
             featItm.classList.add('featured')
-            featItm.appendChild(featDiv)
-
+            featItm.appendChild(featArticle)
 
         featuredHomeList.appendChild(featItm)
 
