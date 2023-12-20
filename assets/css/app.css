@@ -194,6 +194,7 @@ height: auto;
 
 
 
+
 /* *** ************************************************************************************* *** */
 /* *** * FEATURED ************************************************************************** *** */
 /* *** ************************************************************************************* *** */
@@ -263,3 +264,40 @@ color: var(--dark-text-color);
 font-weight: 600;
 padding: 10px 0;
 }
+/* *** ************************************************************************************* *** */
+/* *** * BOTTOM BAR ************************************************************************** *** */
+/* *** ************************************************************************************* *** */
+.bottom-bar {
+    position: fixed;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark-background);
+    padding: 15px;
+    width: 70%; 
+    border-radius: 2rem;
+    z-index: 600;
+    max-width: 350px;
+     }
+
+  .bottom-bar ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+
+  .bottom-bar button {
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+  }
