@@ -337,7 +337,7 @@ padding: 10px 0;
 
 
   .bottom-bar button {
-    background-color: inherit;
+    background-color: transparent;
     border: none;
     width: 32px;
     height: 32px;
