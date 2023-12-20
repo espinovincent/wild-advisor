@@ -318,10 +318,12 @@ padding: 10px 0;
     bottom: 2.5%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: var(--dark-background);
     padding: 15px;
     width: 70%; 
     border-radius: 2rem;
+    z-index: 600;
+    border: 2px #000000;
      }
 
   .bottom-bar ul {
@@ -341,9 +343,13 @@ padding: 10px 0;
   }
 
   .bottom-bar button {
-    background-color: #333;
+    background-color: var(--dark-background);
     border: none;
     padding-left: 50%;
     padding-right: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
 
   }
