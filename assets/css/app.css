@@ -203,10 +203,42 @@ header ul {
 }
 
 .Logo_black {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#logoBlack {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
+#logoBlack -container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+header button {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 5px;
+
+    stroke: #d9d9d9;
+    cursor: pointer;
+
+
+}
+
+#searchButton {}
+
+#searchBar {
+    display: none;
+}
+
+
 
 /* *** ************************************************************************************* *** */
 /* *** * TAGS ************************************************************************** *** */
