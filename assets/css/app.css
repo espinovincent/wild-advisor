@@ -181,19 +181,42 @@ header ul {
     align-content: center;
     height: 48px;
     margin: 20px;
+    background-color: white;
+    border-radius: 5px;
   }
   
-.Logo_black {
+#logoBlack {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
-.logo_black -container {
+#logoBlack -container {
     width: 100px;
     height: 100px;
     overflow: hidden;
 }
+
+header button {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 5px;
+
+    stroke: #d9d9d9;
+    cursor: pointer;
+
+
+}
+
+#searchButton {
+
+}
+
+#searchBar {
+    display: none;
+  }
 
 
 

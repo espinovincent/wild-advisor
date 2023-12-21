@@ -46,3 +46,19 @@ function initHomePage() {
     })
 
 }
+
+function toggleSearch() {
+    const button = document.getElementById('searchButton');
+    const searchBar = document.getElementById('searchBar');
+    const logo = document.getElementById('logoBlack');
+
+    // Toggle the visibility of the button and search bar
+    button.style.display = button.style.display === 'none' ? 'inline-block' : 'none';
+    searchBar.style.display = searchBar.style.display === 'none' ? 'inline-block' : 'none';
+    logo.style.display = logo.style.display === 'none' ? 'inline-block' : 'none';
+
+    // If the search bar is visible, focus on it
+    if (searchBar.style.display !== 'none') {
+      searchBar.focus();
+    }
+  }
