@@ -2,97 +2,160 @@
 /* *** * Medium devices (landscape tablets, 768px and up) ********************************** *** */
 /* *** ************************************************************************************* *** */
 @media only screen and (min-width: 768px) {
+ /* Kanna */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+   padding: 5%;
+}
+/* headline */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #4FAE5A; /*variable*/
+}
+
+.container .photo {
+    width: 35%;
+    min-width: 35%;
+}
+
+.container .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px; 
+    align-items: center;
+}
+
+h1 {
+    color: #fff; /*variable*/
+    font-size: 30px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+    text-align: left;
+    width: 50%;
+}
+
+.globalInfos {
+    width: 100%;
+    position: relative;
+}
+
+.infos {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+}
+
+.infos div {
+    border-radius: 8px; 
+    color: green;
+    padding: 4px;
+    display: flex;
+}
+
+.infos .dollar img, .infos .rate img {
+    color: green;
+    height: auto;
+    min-width: 1%;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.infos .rate {
+    top: 0;
+    right: 0;
+    font-size: 10px;
+    background-color: red;
+}
+
+span {
+    height: auto;
+    /* background-color: aqua; */
+}
+
+.infos .rate, .infos .dollar {
+    display: flex;
+    width: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 5px;
+} 
+
+.foodTag {
+    display: none;
+}
+
+
+@media only screen and (min-width: 992px) {
     * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
     }
     
     body {
-        margin: 5%;
+      padding: 0%;
+      margin-top: 10px;
     }
     
     .container {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-       /* justify-content: space-between;*/
-        gap: 9px;
-        align-items: flex-start;
-        width: 100%;
-        border-radius: 8px;
-        padding: 10px;
-        background-color: #4FAE5A; /*variable*/
+      border-radius: 0;
+      background-color: blueviolet;
+      gap: 0pc;
+      padding-left: 20%;
+      /* padding-top: 15px;
+      padding-bottom: 15px; */
     }
-    .container .photo {
-        width: 35%;
-        min-width: 35%;
+    .globalInfos {
+      width: 25%;
     }
     
-    .container .photo img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        
-    }
-    .container div :has(.text){
-    display: flex;
+    .globalInfos, figure.photo {
+      display: flex;
+      align-items: flex-start;
+      justify-content: spacefle-around;
     }
     
-    .text h1 {
-        color: #fff; /*variable*/
-        font-size: 30px;
-        font-family: 'Open Sans';
-        font-weight: 700;
-        text-align: left;
+    .globalInfos {
+      text-align: start;
+    }
+    /* .infos div {
+      display: flex;
+      align-items: flex-start;
+    } */
+    .globalInfos div, .infos, .foodTag {
+      display: grid;
+      grid-column: 2fr 1fr 1fr;
     }
     
-    .infos {
-       /*position: absolute;*/
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-       background-color: red;
-       width: min-content;
-    
-       
-        }
-    
-    .infos div {
-        background-color: #fff; /*variable*/
-        border-radius: 8px; 
-        color: green;
-        padding: 4px;
-        display: flex;
-       /* margin-left: 92%;*/
-       /* width: 8%; */
-       /* min-width: 8%; */
-         
-         
+    .foodTag {
+      display: block;
     }
+    /* propriete pour ajuster l'image avec le parent */
     
-    .infos .dollar img, .infos .rate img {
-        color: green;
-        
-        height: 5%;
-        min-width: 5%;
-        min-height: 5%;
-      display: inline-block;
-        
-      
-    }
+    } 
     
-    .infos .rate {
-        font-size: 10px;
-    }
-    span{
-        height: auto;
-    }
-
-}
-
+    
+    
+    
+    
 /* *** ************************************************************************************* *** */
 /* *** * Extra large devices (large laptops and desktops, 1200px and up) ******************* *** */
 /* *** ************************************************************************************* *** */
