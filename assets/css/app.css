@@ -191,6 +191,22 @@ body {
     transition: all 400ms ease-out;
 }
 
+/* *** ************************************************************************************* *** */
+/* *** * HEADER ************************************************************************** *** */
+/* *** ************************************************************************************* *** */
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 48px;
+    margin: 20px;
+}
+
+.Logo_black {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 /* *** ************************************************************************************* *** */
 /* *** * TAGS ************************************************************************** *** */
@@ -238,6 +254,12 @@ body {
 .btn-card-tag img {
     width: 80%;
     height: auto;
+
+    .logo_black -container {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
 }
 
 
@@ -336,9 +358,6 @@ body {
     margin-bottom: 0;
 }
 
-
-
-
 .bottom-bar button {
     background-color: transparent;
     border: none;
@@ -348,23 +367,4 @@ body {
     &:hover {
         cursor: pointer;
     }
-}
-
-header ul {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    height: 48px;
-}
-
-.Logo_black {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.logo_black -container {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
 }
