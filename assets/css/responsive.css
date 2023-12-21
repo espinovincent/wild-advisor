@@ -2,39 +2,93 @@
 /* *** * Medium devices (landscape tablets, 768px and up) ********************************** *** */
 /* *** ************************************************************************************* *** */
 @media only screen and (min-width: 768px) {
-    
-}
-
-/* *** ************************************************************************************* *** */
-/* *** * Large devices (laptops/desktops, 992px and up) ************************************ *** */
-/* *** ************************************************************************************* *** */
-@media only screen and (min-width: 992px) {
-    
-    /* *** ************************************************************************************* *** */
-    /* *** * SPLASHSCREEN ********************************************************************** *** */
-    /* *** ************************************************************************************* *** */
-    #splashScreen {
-        align-items: center;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
     }
     
-    #splashScreen .container {
-        min-height: 400px;
-        max-height: 60%;
+    body {
+        margin: 5%;
     }
-
-    /* *** ************************************************************************************* *** */
-    /* *** * HOMEPAGE ************************************************************************** *** */
-    /* *** ************************************************************************************* *** */
-    .wrapperOverflow {
-        max-width: 900px;
-        margin: 0 auto;
+    
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+       /* justify-content: space-between;*/
+        gap: 9px;
+        align-items: flex-start;
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #4FAE5A; /*variable*/
     }
-
-    /* *** ************************************************************************************* *** */
-    /* *** * FEATURED ************************************************************************** *** */
-    /* *** ************************************************************************************* *** */
-    #featuredHomeList li {
-        width: 30%;
+    .container .photo {
+        width: 35%;
+        min-width: 35%;
+    }
+    
+    .container .photo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        
+    }
+    .container div :has(.text){
+    display: flex;
+    }
+    
+    .text h1 {
+        color: #fff; /*variable*/
+        font-size: 30px;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        text-align: left;
+    }
+    
+    .infos {
+       /*position: absolute;*/
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+       background-color: red;
+       width: min-content;
+    
+       
+        }
+    
+    .infos div {
+        background-color: #fff; /*variable*/
+        border-radius: 8px; 
+        color: green;
+        padding: 4px;
+        display: flex;
+       /* margin-left: 92%;*/
+       /* width: 8%; */
+       /* min-width: 8%; */
+         
+         
+    }
+    
+    .infos .dollar img, .infos .rate img {
+        color: green;
+        
+        height: 5%;
+        min-width: 5%;
+        min-height: 5%;
+      display: inline-block;
+        
+      
+    }
+    
+    .infos .rate {
+        font-size: 10px;
+    }
+    span{
+        height: auto;
     }
 
 }
