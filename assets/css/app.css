@@ -427,7 +427,7 @@ header ul {
     margin-bottom: 0;
 }
 
-.bottom-bar button {
+  .bottom-bar button {
     background-color: transparent;
     border: none;
     width: 32px;
@@ -436,96 +436,23 @@ header ul {
     &:hover {
         cursor: pointer;
     }
-}
+  }
 
-
-
-/* *** ************************************************************************************* *** */
-#searchResult {
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 48px;
+  }
+  
+  .Logo_black {
     width: 100%;
-    height: 100vh;
-    background-color: blue;
-}
+    height: 100%;
+    object-fit: contain;
+  }
 
-.card-result {
-    background-color: var(--light-background);
-    border-radius: 7px;
-    display: flex;
-}
-
-.card-result .left {
-    width: 150px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-}
-
-.card-result .left div {
-    position: relative;
-    display: flex;
-}
-
-
-.card-result .left div>img {
-    width: 100%;
-    border-radius: 7px;
-}
-
-.card-result .left div>.btn-like {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 16px;
-    height: 16px;
-    background-color: none;
-    border: none;
-}
-
-
-
-.card-result .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5px;
-
-}
-
-.card-result .right .card-result-info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.card-result-info>h2 {
-    font-weight: 900;
-}
-
-.card-result-info>p {
-    text-transform: uppercase;
-}
-
-
-.card-result .right .localisation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card-result .right .localisation p {
-    font-weight: 300;
-    font-size: small;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-result .right .localisation button {
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    border-color: var(--accent-color-green);
-    color: var(--accent-color-green);
-    background-color: none;
+  .logo_black -container {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
 }
