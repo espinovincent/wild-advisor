@@ -206,7 +206,7 @@ body {
     padding: 5px;
 }
 
-.card-tag {
+.btn-card-tag {
     width: 100%;
     height: auto;
     display: flex;
@@ -226,7 +226,7 @@ body {
     }
 }
 
-.card-tag>figure:has(img) {
+.btn-card-tag>figure:has(img) {
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -235,7 +235,7 @@ body {
     border-radius: 50%;
 }
 
-.card-tag img {
+.btn-card-tagimg {
     width: 80%;
 }
 
