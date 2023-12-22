@@ -1,108 +1,106 @@
-/* *** ************************************************************************************* *** */
-/* *** * Medium devices (landscape tablets, 768px and up) ********************************** *** */
-/* *** ************************************************************************************* *** */
-@media only screen and (min-width: 768px) {
- /* Kanna */
- * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 body {
-   padding: 5%;
+ padding: 5%;
 }
 /* headline */
 .container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 9px;
-    width: 100%;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #4FAE5A; /*variable*/
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #4FAE5A; /*variable*/
 }
 
 .container .photo {
-    width: 35%;
-    min-width: 35%;
+  width: 35%;
+  min-width: 35%;
 }
 
 .container .photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 10px; 
-    align-items: center;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px; 
+  align-items: center;
 }
 
 h1 {
-    color: #fff; /*variable*/
-    font-size: 30px;
-    font-family: 'Open Sans',sans-serif;
-    font-weight: 700;
-    text-align: left;
-    width: 50%;
+  color: #fff; /*variable*/
+  font-size: 30px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  text-align: left;
+  width: 50%;
 }
 
 .globalInfos {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .infos {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    top: 0;
-    right: 0;
-    border-radius: 8px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
 }
 
 .infos div {
-    border-radius: 8px; 
-    color: green;
-    padding: 4px;
-    display: flex;
+  border-radius: 8px; 
+  color: green;
+  padding: 4px;
+  display: flex;
 }
 
 .infos .dollar img, .infos .rate img {
-    color: green;
-    height: auto;
-    min-width: 1%;
-    display: inline-block;
-    justify-content: space-between;
+  color: green;
+  height: auto;
+  min-width: 1%;
+  display: inline-block;
+  justify-content: space-between;
 }
 
 .infos .rate {
-    top: 0;
-    right: 0;
-    font-size: 10px;
-    background-color: red;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  background-color: red;
 }
 
 span {
-    height: auto;
-    /* background-color: aqua; */
+  height: auto;
+  /* background-color: aqua; */
 }
 
 .infos .rate, .infos .dollar {
-    display: flex;
-    width: 50px;
-    border-radius: 8px;
-    background-color: #fff;
-    margin-top: 5px;
+  display: flex;
+  width: 50px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 5px;
 } 
 
 .foodTag {
-    display: none;
+  display: none;
 }
 
-
-@media only screen and (min-width: 992px) {
+/* *** ************************************************************************************* *** */
+/* *** * Medium devices (landscape tablets, 768px and up) ********************************** *** */
+/* *** ************************************************************************************* *** */
+@media only screen and (min-width: 768px) {}
+  @media only screen and (min-width: 992px) {
     * {
       box-sizing: border-box;
       margin: 0;
@@ -125,12 +123,18 @@ span {
     }
     .globalInfos {
       width: 25%;
+      height: auto;
+      margin-left: 30px;
+    }
+    h1 {
+      margin-bottom: 10%;
     }
     
     .globalInfos, figure.photo {
       display: flex;
       align-items: flex-start;
-      justify-content: spacefle-around;
+      justify-content: space-around;
+      background-color: aqua;
     }
     
     .globalInfos {
@@ -140,18 +144,31 @@ span {
       display: flex;
       align-items: flex-start;
     } */
-    .globalInfos div, .infos, .foodTag {
+    .globalInfos, .dollar, .foodTag {
       display: grid;
-      grid-column: 2fr 1fr 1fr;
-    }
+      grid-column: 2/1;
+      justify-content: flex-end;
+      align-items: flex-end;
+    
+      background-color: blue;
+    }/*  à voir  */
     
     .foodTag {
       display: block;
     }
     /* propriete pour ajuster l'image avec le parent */
-    
+    .infos {
+      position: unset;
+    }
+    .rate, .dollar{
+      margin-left: 80%;
     } 
+    }
     
+    
+@media only screen and (min-width: 992px) {
+}
+   
     
     
     
