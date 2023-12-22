@@ -235,8 +235,9 @@ body {
     border-radius: 50%;
 }
 
-.btn-card-tagimg {
+.btn-card-tag img {
     width: 80%;
+    height: auto;
 }
 
 
