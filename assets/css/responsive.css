@@ -17,7 +17,7 @@ body {
   width: 100%;
   border-radius: 8px;
   padding: 10px;
-  background-color: #4FAE5A; /*variable*/
+  background-color: var(--accent-color-green); 
 }
 
 .container .photo {
@@ -51,7 +51,7 @@ h1 {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  /* gap: 5px; */
   top: 0;
   right: 0;
   border-radius: 8px;
@@ -59,13 +59,13 @@ h1 {
 
 .infos div {
   border-radius: 8px; 
-  color: green;
+  color: var(--accent-color-green);
   padding: 4px;
   display: flex;
 }
 
 .infos .dollar img, .infos .rate img {
-  color: green;
+  color: var(--accent-color-green);
   height: auto;
   min-width: 1%;
   display: inline-block;
@@ -99,7 +99,7 @@ span {
 /* *** ************************************************************************************* *** */
 /* *** * Medium devices (landscape tablets, 768px and up) ********************************** *** */
 /* *** ************************************************************************************* *** */
-@media only screen and (min-width: 768px) {}
+  @media only screen and (min-width: 768px) {}
   @media only screen and (min-width: 992px) {
     * {
       box-sizing: border-box;
@@ -115,7 +115,7 @@ span {
     
     .container {
       border-radius: 0;
-      background-color: blueviolet;
+      background-color: ;
       gap: 0pc;
       padding-left: 20%;
       /* padding-top: 15px;
@@ -127,18 +127,21 @@ span {
       margin-left: 30px;
     }
     h1 {
-      margin-bottom: 10%;
+      margin-bottom: 5%;
+      font-size: 25px;
+      text-align: center;
+      flex-wrap: nowrap;
     }
     
     .globalInfos, figure.photo {
       display: flex;
       align-items: flex-start;
-      justify-content: space-around;
-      background-color: aqua;
+      justify-content: space-around;  
     }
     
     .globalInfos {
       text-align: start;
+      margin-bottom: 15px;
     }
     /* .infos div {
       display: flex;
@@ -149,21 +152,30 @@ span {
       grid-column: 2/1;
       justify-content: flex-end;
       align-items: flex-end;
-    
-      background-color: blue;
-    }/*  à voir  */
+    }
     
     .foodTag {
       display: block;
+      margin-bottom: 10%;
     }
     /* propriete pour ajuster l'image avec le parent */
     .infos {
       position: unset;
     }
-    .rate, .dollar{
+    .infos div {
+      display: grid;
+      justify-content: flex-end;
+    }
+    .infos .rate, .infos .dollar{
+      display: flex;
+      justify-content: ;
       margin-left: 80%;
     } 
+    .littleInfos figure {
+      display:flex;
+      flex-direction: row;
     }
+    
     
     
 @media only screen and (min-width: 992px) {
