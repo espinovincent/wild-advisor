@@ -4,12 +4,12 @@ function createTags() {
   const cards = document.querySelector(".cards-tag");
   tags.forEach((tag) => {
     cards.innerHTML += `
-        <div class="card-tag" data-type="${tag.name}">
-            <div>
+        <button type="button" class="card-tag" data-type="${tag.name}">
+            <figure>
                 <img src="${tag.img}" alt="${tag.name}" />
-            </div>
-            <span>${tag.name}</span>
-        </div>
+            </figure>
+            <figcaption>${tag.name}</figcaption>
+        </button>
     `;
   });
 }
