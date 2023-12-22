@@ -186,7 +186,7 @@ body {
     right: 0;
     bottom: 0;
     opacity: 0;
-    background: lime;
+    background: var(--light-background);
     z-index: -1;
     transition: all 400ms ease-out;
 }
