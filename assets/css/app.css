@@ -51,28 +51,28 @@ body {
 }
 
 .rating {
-padding: 1px 8px 1px 3px;
-border-radius: 8px;
-background: var(--light-background);
+    padding: 1px 8px 1px 3px;
+    border-radius: 8px;
+    background: var(--light-background);
 }
 
 .rating div {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-align-items: center;
-justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .rating div span {
-font-size: 16px;
-color: inherit;
+    font-size: 16px;
+    color: inherit;
 }
 
 .rating div span img {
-width: 20px;
-height: auto;
-margin-right: 5px;
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
 }
 
 
@@ -98,9 +98,9 @@ margin-right: 5px;
 }
 
 .star {
-display: block;
-width: 24px;
-height: auto;
+    display: block;
+    width: 24px;
+    height: auto;
 }
 
 .star polygon {
@@ -243,6 +243,53 @@ header button {
   }
 
  
+/* *** ************************************************************************************* *** */
+/* *** * TAGS ************************************************************************** *** */
+/* *** ************************************************************************************* *** */
+
+
+.cards-tag {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.btn-card-tag {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+    background-color: var(--medium-background);
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.btn-card-tag>figure:has(img) {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-background);
+    border-radius: 50%;
+}
+
+.btn-card-tag img {
+    width: 80%;
+    height: auto;
+}
 
 
 
@@ -310,11 +357,12 @@ header button {
 }
 
 #featuredHomeList li article h3 {
-font-size: 16px;
-color: var(--dark-text-color);
-font-weight: 600;
-padding: 10px 0;
+    font-size: 16px;
+    color: var(--dark-text-color);
+    font-weight: 600;
+    padding: 10px 0;
 }
+
 /* *** ************************************************************************************* *** */
 /* *** * BOTTOM BAR ************************************************************************** *** */
 /* *** ************************************************************************************* *** */
@@ -325,11 +373,11 @@ padding: 10px 0;
     transform: translateX(-50%);
     background-color: var(--dark-background);
     padding: 15px;
-    width: 70%; 
+    width: 70%;
     border-radius: 2rem;
     z-index: 600;
     max-width: 350px;
-     }
+}
 
 .bottom-bar ul {
     display: flex;
@@ -337,7 +385,7 @@ padding: 10px 0;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-  }
+}
 
 .bottom-bar button {
     background-color: transparent;
