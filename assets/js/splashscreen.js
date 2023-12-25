@@ -49,12 +49,12 @@ function callFooding(pos) {
 			return response.json()
 		})
 		.then((data) => {
-			foods = data.results
+			 /* KAnna  */foods = data.results
 
             foods.map(food => {
                 food.food_pic = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=${food.photos[0].photo_reference}&key=${apiKey}`
             })
-
+            console.log(foods)
             // Select randomly the headline
             // TODO LATER: Get it from recorded items from the BackEnd
             headline = getRandomItem(foods, 1)

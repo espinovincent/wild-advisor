@@ -190,7 +190,101 @@ body {
     z-index: -1;
     transition: all 400ms ease-out;
 }
+* *** ************************************************************************************* *** */
+/* *** * HOMEPAGE ************************************************************************** *** */
+/* *** ************************************************************************************* *** */
+    body {
+    padding: 5%;
+   }
+   
+   .container {
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     gap: 9px;
+     width: 100%;
+     border-radius: 8px;
+     padding: 10px;
+     background-color: var(--accent-color-green); 
+   }
+   
+   .container .photo {
+     width: 35%;
+     min-width: 35%;
+   }
+   
+   .container .photo img {
+     width: 100%;
+     height: auto;
+     border-radius: 8px;
+     margin-top: 10px; 
+     align-items: center;
+   }
+   
+   h1 {
+     color: var(--medium-background); /*variable*/
+    /*  font-size: 30px; */
+    font-size: 5vw;
+     font-family: 'Open Sans',sans-serif;
+     font-weight: 700;
+     text-align: left;
+     width: 50%;
+   }
+   
+   .globalInfos {
+     width: 100%;
+     position: relative;
+   }
+   
+   .infos {
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     /* gap: 5px; */
+     top: 0;
+     right: 0;
+     border-radius: 8px;
+   }
+   
+   .infos div {
+     border-radius: 8px; 
+     color: var(--accent-color-green);
+     padding: 4px;
 
+     
+   }
+   
+   .infos .dollar img, .infos .rate img {
+     color: var(--accent-color-green);
+     height: auto;
+     min-width: 1%;
+     display: inline-block;
+     justify-content: space-between;
+   }
+   
+   .infos .rate {
+     top: 0;
+     right: 0;
+     font-size: 10px;
+   }
+   
+   span {
+     height: auto;
+     /* background-color: aqua; */
+   }
+   
+   .infos .rate, .infos .dollar {
+     display: flex;
+     width: 50px;
+     border-radius: 8px;
+     background-color: var(--medium-background);
+     margin-top: 5px;
+   } 
+   
+   .foodTag {
+     display: none;
+   }
+/* headline */
 
 /* *** ************************************************************************************* *** */
 /* *** * TAGS ************************************************************************** *** */

@@ -53,11 +53,9 @@
     
     .container {
       border-radius: 0;
-      background-color: ;
-      gap: 0pc;
+      gap: 0px;
       padding-left: 20%;
-      /* padding-top: 15px;
-      padding-bottom: 15px; */
+      position: relative;
     }
     .globalInfos {
       width: 25%;
@@ -93,25 +91,31 @@
     }
     
     .foodTag {
-      display: block;
-      margin-bottom: 10%;
+      display: flex;
+      margin: 5% 0 5% 0;
     }
     /* propriete pour ajuster l'image avec le parent */
     .infos {
       position: unset;
     }
     .infos div {
-      display: grid;
-      justify-content: flex-end;
-    }
-    .infos .rate, .infos .dollar{
       display: flex;
-      justify-content: ;
-      margin-left: 80%;
+      justify-content: flex-end;
+
+    }
+    .infos .rate, .infos .dollar {
+      width: 20px;
     } 
-    .littleInfos figure {
-      display:flex;
+    .littleInfos div {
+      display:grid;
       flex-direction: row;
+      align-items: end;
+      position: re;
+      left: 10%;
+    }
+
+    .infos .rate {
+      margin-right: 20%;
     }
 
     /* *** ************************************************************************************* *** */
