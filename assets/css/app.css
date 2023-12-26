@@ -202,11 +202,12 @@ header ul {
     margin: 20px;
     border-radius: 5px;
   }
-  
-#logoBlack {
+
+  #logoBlack {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    max-height: 48px;
   }
 
 #logoBlack -container {
@@ -214,8 +215,17 @@ header ul {
     height: 100px;
     overflow: hidden;
 }
+#user-btn {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
 
-header button {
+}
+#show-search-btn {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -226,21 +236,49 @@ header button {
 
 }
 
-
-#searchBar {
+#search-form {
     display: none;
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 8px;
     font-size: 16px;
-    padding-left: 30px; /* Adjust padding to accommodate the icon */
     box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+#search-container {
+    text-align: center;
+    height: 48px;
+
+}
+#search-input-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 48px;
     border-radius: 5px;
     border: 1px solid #d9d9d9;
-    overflow: hidden;
+}
+#search-input {
+    height: 100%;
+}
 
-  }
+#submit-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    border: none;
+    object-fit: contain;
+    background-color: transparent;
+    
+}
+
+.hide-btn {
+    display: none;
+}
 
  
 /* *** ************************************************************************************* *** */
