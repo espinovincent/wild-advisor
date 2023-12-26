@@ -64,9 +64,10 @@ body {
     justify-content: center;
 }
 
-.rating div span {
+.rating div.rating-score span {
     font-size: 16px;
-    color: inherit;
+    color: var(--dark-text-color);
+    font-weight: 500;
 }
 
 .rating div span img {
@@ -75,27 +76,6 @@ body {
     margin-right: 5px;
 }
 
-
-.rating-score-0 {
-    color: #FF0000;
-}
-
-.rating-score-1 {
-    color: #FFA700;
-}
-
-.rating-score-2 {
-    color: #FFF400;
-}
-
-.rating-score-3 {
-    color: #A3FF00;
-}
-
-.rating-score-4,
-.rating-score-5 {
-    color: #2CBA00;
-}
 
 .star {
     display: block;
