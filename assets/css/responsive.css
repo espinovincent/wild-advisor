@@ -52,6 +52,9 @@
         margin: 0 auto;
     }
 
+    .rating div.rating-score span {
+        font-size: 20px;
+    }
 
     .rating div.rating-score span {
         font-size: 20px;
