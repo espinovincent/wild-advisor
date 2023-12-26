@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var searchForm = document.getElementById('search-form');
-    var showSearchBtn = document.getElementById('show-search-btn');
-    var logoContainer = document.getElementById('logo-container');
-    var searchInput = document.getElementById('search-input');
-    var searchContainer = document.getElementById('search-container');
+    const searchForm = document.getElementById('search-form');
+    const showSearchBtn = document.getElementById('show-search-btn');
+    const logoContainer = document.getElementById('logo-container');
+    const searchInput = document.getElementById('search-input');
+    const searchContainer = document.getElementById('search-container');
 
     document.getElementById('show-search-btn').addEventListener('click', function(event) {
         event.stopPropagation(); // Prevent the click from propagating to the document
