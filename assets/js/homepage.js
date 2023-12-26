@@ -46,19 +46,55 @@ function initHomePage() {
     })
 
 }
+document.getElementById('show-search-btn').addEventListener('click', function() {
+    var searchForm = document.getElementById('search-form');
+    var showSearchBtn = document.getElementById('show-search-btn');
+    var logoContainer = document.getElementById('logo-container');
 
-function toggleSearch() {
-    const button = document.getElementById('searchButton');
-    const searchBar = document.getElementById('searchBar');
-    const logo = document.getElementById('logoBlack');
-
-    // Toggle the visibility of the button and search bar
-    button.style.display = button.style.display === 'none' ? 'inline-block' : 'none';
-    searchBar.style.display = searchBar.style.display === 'none' ? 'inline-block' : 'none';
-    logo.style.display = logo.style.display === 'none' ? 'inline-block' : 'none';
-
-    // If the search bar is visible, focus on it
-    if (searchBar.style.display !== 'none') {
-      searchBar.focus();
+    if (searchForm.style.display === 'none' || searchForm.style.display === '') {
+        searchForm.style.display = 'block';
+        showSearchBtn.classList.add('hide-btn');
+        logoContainer.style.display = 'none';
+    } else {
+        searchForm.style.display = 'none';
+        showSearchBtn.classList.remove('hide-btn');
+        logoContainer.style.display = 'block';
     }
-  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var searchContainer = document.getElementById('search-container');
+    var searchForm = document.getElementById('search-form');
+    var showSearchBtn = document.getElementById('show-search-btn');
+    var logoContainer = document.getElementById('logo-container');
+    var searchInput = document.getElementById('search-input');
+    var submitBtn = document.getElementById('submit-btn');
+
+    document.addEventListener('click', function(event) {
+        // Check if the click is outside the search-container
+        if (!searchContainer.contains(event.target)) {
+            // Check if the search-input value is null or empty
+            if (!searchInput.value.trim()) {
+                searchForm.style.display = 'none';
+                showSearchBtn.style.display = 'block';
+                logoContainer.style.display = 'block';
+            }
+        }
+    });
+
+    document.getElementById('show-search-btn').addEventListener('click', function() {
+        searchForm.style.display = 'block';
+        showSearchBtn.style.display = 'none';
+        logoContainer.style.display = 'none';
+    });
+
+    document.getElementById('search-input-form').addEventListener('submit', function(event) {
+        // Prevent the form from submitting (you can add your form submission logic here)
+        event.preventDefault();
+        // Your search logic here
+        console.log('Search submitted: ', searchInput.value.trim());
+    });
+});
+
+
+
