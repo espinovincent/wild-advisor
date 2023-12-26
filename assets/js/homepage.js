@@ -9,7 +9,7 @@ function initHomePage() {
         // Create figcaption containing the rate and the star
         let featRating = document.createElement('figcaption')
             featRating.classList.add('rating')
-            featRating.innerHTML = `<div class="rating-score-${Math.trunc(feat.rating)}">
+            featRating.innerHTML = `<div class="rating-score">
                                         <span><img src="assets/images/template/star.svg" class="star" alt="${Math.trunc(feat.rating)}" title="${Math.trunc(feat.rating)}"></span>
                                         <span>${feat.rating}</span>
                                     </div>`
