@@ -25,7 +25,6 @@
     <div id="mainContainer">
         <div id="mainWrapper">
 
-            
             <section id="splashScreen" class="active">
                 <div class="container">
                     <h1>
@@ -40,27 +39,6 @@
             
             <section id="homePage">
                 <div class="wrapperOverflow">
-                    <header>
-                        <ul>
-                            <li>
-                                <div id="search-container" >
-                                    <button type="button" id="show-search-btn"><img src="assets/images/template/search.webp" alt="Search" title="Search" class="Search-icon"></button>
-                                    <div id="search-form">
-                                        <form id="search-input-form">
-                                        <input type="text" id="search-input" placeholder="Enter your search..."  >
-                                        <button type="submit" id="submit-btn"> <img src="assets/images/template/search.webp" alt="Search" title="Search" class="Search-icon" > </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div id="logo-container">
-                                <img src="assets/images/template/wild-advisor.webp" alt="Logo" title="Logo" id="logoBlack">
-                                </div>
-                            </li>
-                            <li><button type="button" id="user-btn"><img src="assets/images/template/user.webp" alt="Search" title="Search"></button></li>
-                        </ul>
-                    </header>
 
                     <div class="cards-tag">    
                     </div>
@@ -79,16 +57,43 @@
                     </div>
                 </div>
             </section>
+
+            <footer><button id="openLegales" type="button">Legal notices</button></footer>
+
         </div>
-        
     </div>
 
-    <script src="assets/js/header.js"></script>
+    <div id="legales" class="popin">
+        <div class="wrapPopin">
+            <button class="closePopin" type="button">×</button>
+            <div class="contextPopin">
+                <p>
+                    <span class="wild">Wild Advisor</span>
+
+                    <span class="title">EDITOR</span>
+                    Vincent ESPINO<br>
+                    Phone: 06.06.06.06.06
+
+                    <span class="title">PUBLICATION MANAGER</span>
+                    Vincent ESPINO<br>
+                    Phone: 06.06.06.06.06
+
+                    <span class="title">WEB HOST</span>
+                    SAS OVH<br>
+                    140 Quai du Sartel<br>
+                    59100 Roubaix
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/app.js" defer></script>
-    <script src="assets/js/splashscreen.js" defer></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/legales.js"></script>
     <script src="assets/js/homepage.js" defer></script>
     <script src="assets/js/createTag.js" type="module" defer></script>
-    
+    <script src="assets/js/splashscreen.js" defer></script>
+
 
 </body>
 </html>

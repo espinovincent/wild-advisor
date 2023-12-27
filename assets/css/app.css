@@ -417,4 +417,82 @@ header ul {
     &:hover {
         cursor: pointer;
     }
-  }
+}
+
+
+/* *** ************************************************************************************* *** */
+/* *** * MENTIONS LEGALES ****************************************************************** *** */
+/* *** ************************************************************************************* *** */
+#legales {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+#legales.show {
+    z-index: 800;
+}
+
+#legales .wrapPopin {
+    position: relative;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--light-background);
+}
+
+#legales .wrapPopin .closePopin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 0;
+    color: var(--dark-text-color);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#legales .wrapPopin .contextPopin p {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#legales .wrapPopin .contextPopin p span.wild {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#legales .wrapPopin .contextPopin p span.title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+
+/* *** ************************************************************************************* *** */
+/* *** * FOOTER **************************************************************************** *** */
+/* *** ************************************************************************************* *** */
+footer {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 800;
+}
+
+footer button {
+    font-size: 16px;
+    color: var(--dark-text-color);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
