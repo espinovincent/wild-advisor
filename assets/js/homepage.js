@@ -2,6 +2,8 @@
 //   Getting the whole app ready for him to say 'Wow', without waiting a split second
 function initHomePage() {
 
+    console.log(headline[0])
+
     featured.map(feat => {
 
         // TODO LATER: Add a button around the whole element, leading to the restaurant's page with details
