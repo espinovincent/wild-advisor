@@ -473,6 +473,7 @@ header ul {
     display: block;
     font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
     padding-top: 30px;
 }
 
