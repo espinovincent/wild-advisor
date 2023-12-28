@@ -2,7 +2,6 @@
 //   Getting the whole app ready for him to say 'Wow', without waiting a split second
 function initHomePage() {
 
-    console.log(headline[0])
 
     featured.map(feat => {
 
