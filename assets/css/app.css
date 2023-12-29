@@ -201,7 +201,7 @@ body {
      align-items: center;
    }
    
-   h1 {
+    h1 {
      color: var(--medium-background); /*variable*/
     /*  font-size: 30px; */
     font-size: 5vw;
@@ -258,6 +258,9 @@ body {
      background-color: var(--medium-background);
      margin-top: 5px;
    } 
+   .titleFood {
+    background: red;
+   }
    
    .foodTag {
      display: none;
