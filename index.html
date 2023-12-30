@@ -71,7 +71,7 @@
                     </div>
                   </div>
                 </li>
-                <li id="li-logo">
+                <li>
                   <div id="logo-container">
                     <img
                       src="assets/images/template/wild-advisor.webp"
@@ -94,35 +94,37 @@
             </header>
 
             <div class="login-container hidden" id="loginWrapper">
-              <form id="loginForm" onsubmit="return false;">
-                <div class="form-group">
-                  <label for="username"></label>
-                  <input
-                    type="username"
-                    id="username"
-                    name="username"
-                    placeholder="Enter your e-mail"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="password"></label>
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Enter your password"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <button onclick="validateLogin()">Login</button>
-                </div>
-                <section id="login-container-other">
-                  <div>Forgot password</div>
-                  <div>Sign up</div>
-                </section>
-              </form>
+              <div id="loginForm-container">
+                <form id="loginForm" onsubmit="return false;">
+                  <div class="form-group">
+                    <label for="username"></label>
+                    <input
+                      type="username"
+                      id="username"
+                      name="username"
+                      placeholder="Enter your e-mail"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password"></label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="Enter your password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <button onclick="validateLogin()">Login</button>
+                  </div>
+                  <section id="login-container-other">
+                    <div>Forgot password</div>
+                    <div>Sign up</div>
+                  </section>
+                </form>
+              </div>
             </div>
 
             <div class="cards-tag"></div>
@@ -142,9 +144,8 @@
                     />
                   </button>
                 </li>
-                <!-- FEATURE NOT READY FOR DEMO!!
                 <li>
-                  <button type="button" id="historyBottomBar">
+                  <button type="button">
                     <img
                       src="assets/images/template/history-white.webp"
                       alt="History"
@@ -153,7 +154,7 @@
                   </button>
                 </li>
                 <li>
-                  <button type="button" id="favBottomBar">
+                  <button type="button">
                     <img
                       src="assets/images/template/favs-white.webp"
                       alt="Favorites"
@@ -161,7 +162,6 @@
                     />
                   </button>
                 </li>
-                -->
                 <li>
                   <button type="button" id="user-btn-bottom">
                     <img
