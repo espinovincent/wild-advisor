@@ -31,5 +31,7 @@ btnCardTags.forEach((btnTag) => {
     // const type = e.target.closest(".card-tag").dataset.type;
     // eslint-disable-next-line no-console
     console.log(type);
+    console.log("foods : ",foods)
+    console.log("featured : ",featured)
   });
 });
