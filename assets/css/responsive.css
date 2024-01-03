@@ -124,7 +124,7 @@
     }
 
     .infos .rate, .infos .dollar {
-      width: 35px;
+      min-width: 35px;
     } 
 
     .littleInfos div {

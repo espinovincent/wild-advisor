@@ -257,13 +257,19 @@ body {
    .infos .rate, .infos .dollar {
      display: flex;
      justify-content: center;
-     width: 50px;
+     min-width: 50px;
      border-radius: 8px;
      background-color: var(--medium-background);
      margin-top: 5px;
      font-size: 22px;
      font-weight: 500;
    } 
+
+   .ratingHeadline div {
+    display: flex;
+    flex-direction: row;
+   }
+
    .titleFood {
     background: red;
    }
