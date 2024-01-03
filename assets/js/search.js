@@ -1,22 +1,31 @@
 const searchWrapper = document.querySelector(".searchWrapper");
 const searchResultContain = searchWrapper.querySelector("#searchResult");
 
-const search = document.querySelector("#search-input");
-search.addEventListener("input", function (event) {
-  saisie = event.target.value;
+function search(saisie) {
   let searchResult = [];
   if (saisie.length >= 1) {
     searchWrapper.style.display = "block";
-    console.log("saisie : ", saisie);
     searchResult = foods.filter((food) => {
-      return food.name.toLowerCase().includes(saisie.toLowerCase());
+      const isTypeMatch = food.types.some((type) =>
+        type.includes(saisie.toLowerCase())
+      );
+      const isNameMatch = food.name
+        .toLowerCase()
+        .includes(saisie.toLowerCase());
+      return isNameMatch || isTypeMatch;
     });
+    searchResultContain.innerHTML = ``;
     searchResult.map((result) => {
       searchResultContain.innerHTML += createCartSearch(result);
     });
   } else {
     searchWrapper.style.display = "none";
   }
+}
+const inputSearch = document.querySelector("#search-input");
+inputSearch.addEventListener("input", function (event) {
+  saisie = event.target.value;
+  search(saisie);
 });
 
 function createCartSearch(card) {
@@ -33,7 +42,7 @@ function createCartSearch(card) {
       <div>
         <div class="rating-score">
             <span><img src="assets/images/template/star.svg" class="star" alt="${Math.trunc(
-                card.rating
+              card.rating
             )}" title="${Math.trunc(card.rating)}"></span>
             <span>${card.rating}</span>
         </div>

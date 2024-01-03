@@ -7,7 +7,7 @@ function createTags() {
     cards.innerHTML += `
         <button type="button" class="btn-card-tag" data-type="${tag.name}">
             <figure>
-                <img src="${tag.img}" alt="${tag.name}" />
+                <img src="https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/${tag.slug}-71.png" alt="${tag.name}" />
             </figure>
             <figcaption>${tag.name}</figcaption>
         </button>
@@ -27,11 +27,9 @@ cards.addEventListener("click", (e) => {
 const btnCardTags = document.querySelectorAll('.btn-card-tag');
 btnCardTags.forEach((btnTag) => {
   btnTag.addEventListener('click', (e) => {
-    const { type } = e.target.closest('.btn-card-tag').dataset;
-    // const type = e.target.closest(".card-tag").dataset.type;
-    // eslint-disable-next-line no-console
-    console.log(type);
-    console.log("foods : ",foods)
-    console.log("featured : ",featured)
+    // eslint-disable-next-line prefer-destructuring
+    const type = e.target.closest('.btn-card-tag').dataset.type;
+    // eslint-disable-next-line no-undef
+    search(type);
   });
 });
