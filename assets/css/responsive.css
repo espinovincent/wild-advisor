@@ -109,10 +109,16 @@
       align-items: flex-end;
     }
     
+   /*  .foodTag {
+      display: flex;
+      margin: 5% 0 5% 0;
+    } */
     .foodTag {
       display: flex;
       margin: 5% 0 5% 0;
-    }
+    } 
+
+    
     /* propriete pour ajuster l'image avec le parent */
     .infos {
       position: unset;
@@ -120,18 +126,30 @@
     .infos div {
       display: flex;
       justify-content: flex-end;
+      
 
     }
+
     .infos .rate, .infos .dollar {
-      width: 20px;
+      width: 35px;
     } 
     .littleInfos div {
       display:grid;
       flex-direction: row;
       align-items: end;
-      position: re;
+      position: relative;
       left: 10%;
     }
+/* 
+    .rate span {
+      position: relative;
+    };
+ */
+    .yellow {
+      position: absolute;
+      top: 100%;
+    }
+
 
     .infos .rate {
       margin-right: 20%;
@@ -165,14 +183,6 @@
     
     
     
-/* *** ************************************************************************************* *** */
-/* *** * Extra large devices (large laptops and desktops, 1200px and up) ******************* *** */
-/* *** ************************************************************************************* *** */
-@media only screen and (min-width: 1200px) {
-
-}
-
-
 /* *** ************************************************************************************* *** */
 /* *** * Extra large devices (large laptops and desktops, 1200px and up) ******************* *** */
 /* *** ************************************************************************************* *** */

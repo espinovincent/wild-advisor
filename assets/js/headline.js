@@ -1,19 +1,3 @@
-/* const titleFoods = document.createElement("h1")
-    titleFoods.innerHTML = foods.name;
-    globalInfos.classList.add("titleFood")
-    globalInfos.appendChild(globalInfos)
-   /*  let foods = featured = [] */ 
-   
-/* mettre par selection d'element showrate */
-/* function changeTitleFoods() {
-    const headlineFoods = document.getElementsByClassName('titleFoods');
-    for (let i = 0; i< foods.length; i++){
-        titleFoods[i].innerText = foods.name[0];
-    }
-    
-}
-changeTitleFoods()
-console.log(changeTitleFoods) */
 
 /* function foodImage () {
     const food = document.querySelector (".foodTag")
@@ -40,10 +24,19 @@ const headlineTitle = document.createElement('h1')
       const rate = document.querySelector ('.rate');
       rate.textContent = headline.rating;
 
-      const dollar = document;querySelector('.dollar');
+      const dollar = document.querySelector('.dollar');
+      dollar.textContent = headline.price_level;
+
       /* regarder la console pour extraire */
+      const foodTag = document.querySelector('foodTag');
+      foodTag.textContent = headline.types.Array;
+        
     } 
     createHeadline()
+
+    function createtag() {
+        
+    }
     
       /* titleFoods.addEventListener('mouseover', function() {
         titleFoods.style.cursor = "pointer"

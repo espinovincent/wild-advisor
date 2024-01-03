@@ -49,7 +49,7 @@ function callFooding(pos) {
 			return response.json()
 		})
 		.then((data) => {
-			 /* KAnna  */foods = data.results
+			foods = data.results /* Kanna */
 
             foods.map(food => {
                 food.food_pic = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=${food.photos[0].photo_reference}&key=${apiKey}`
