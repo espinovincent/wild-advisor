@@ -98,10 +98,7 @@
       text-align: start;
       margin-bottom: 15px;
     }
-    /* .infos div {
-      display: flex;
-      align-items: flex-start;
-    } */
+  
     .globalInfos, .dollar, .foodTag {
       display: grid;
       grid-column: 2/1;
@@ -109,13 +106,10 @@
       align-items: flex-end;
     }
     
-   /*  .foodTag {
-      display: flex;
-      margin: 5% 0 5% 0;
-    } */
+   
     .foodTag {
       display: flex;
-      margin: 5% 0 5% 0;
+      margin: 5% 0;
     } 
 
     
@@ -123,16 +117,16 @@
     .infos {
       position: unset;
     }
+
     .infos div {
       display: flex;
       justify-content: flex-end;
-      
-
     }
 
     .infos .rate, .infos .dollar {
       width: 35px;
     } 
+
     .littleInfos div {
       display:grid;
       flex-direction: row;
@@ -140,11 +134,7 @@
       position: relative;
       left: 10%;
     }
-/* 
-    .rate span {
-      position: relative;
-    };
- */
+
     .yellow {
       position: absolute;
       top: 100%;
@@ -153,6 +143,7 @@
 
     .infos .rate {
       margin-right: 20%;
+    }
   /* *** ************************************************************************************* *** */
 
       

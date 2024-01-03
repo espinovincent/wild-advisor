@@ -2,8 +2,7 @@
 //   Getting the whole app ready for him to say 'Wow', without waiting a split second
 function initHomePage() {
 
-    
-createHeadline(headline[0]);
+    createHeadline(headline[0]);
 
 
     featured.map(feat => {

@@ -68,7 +68,7 @@ function callFooding(pos) {
 
 		})
 		.catch(function(error) {
-			console.error(error)
+			console.error(error);
 		})
 
 }
