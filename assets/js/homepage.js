@@ -2,23 +2,12 @@
 //   Getting the whole app ready for him to say 'Wow', without waiting a split second
 // eslint-disable-next-line no-unused-vars
 function initHomePage() {
+  createHeadline(headline[0]);
+
   // eslint-disable-next-line no-undef, array-callback-return
   featured.map((feat) => {
     // eslint-disable-next-line max-len
     // TODO LATER: Add a button around the whole element, leading to the restaurant's page with details
-
-    createHeadline(headline[0]);
-
-
-    featured.map(feat => {
-
-        // TODO LATER: Add a button around the whole element, leading to the restaurant's page with details
-
-        // Create figcaption containing the rate and the star
-        let featRating = document.createElement('figcaption')
-            featRating.classList.add('rating')
-            featRating.innerHTML = `<div class="rating-score">
-                                        <span><img src="assets/images/template/star.svg" class="star" alt="${Math.trunc(feat.rating)}" title="${Math.trunc(feat.rating)}"></span>
 
     // Create figcaption containing the rate and the star
     const featRating = document.createElement('figcaption');
@@ -29,7 +18,6 @@ function initHomePage() {
   )}" title="${Math.trunc(
   feat.rating,
 )}"></span>
-
                                         <span>${feat.rating}</span>
                                     </div>`;
 

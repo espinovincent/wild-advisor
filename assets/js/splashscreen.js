@@ -52,33 +52,30 @@ function callFooding(pos) {
       // eslint-disable-next-line no-undef
       foods = data.results;
 
-	fetch(urlAPI)
-		.then((response) => {
-			return response.json()
-		})
-		.then((data) => {
-			foods = data.results /* Kanna */
+      fetch(urlAPI)
+        .then((response) => response.json())
+        .then((data) => {
+          foods = data.results; /* Kanna */
 
-            foods.map(food => {
-                food.food_pic = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=${food.photos[0].photo_reference}&key=${apiKey}`
-            })
-            console.log(foods)
-            // Select randomly the headline
-            // TODO LATER: Get it from recorded items from the BackEnd
-            headline = getRandomItem(foods, 1)
-            console.log(foods);
-            
-            // Select randomly the featured
-            // TODO LATER: Get them from recorded items from the BackEnd
-            featured = getRandomItem(foods, 6)
-            
-            // Construct the Homepage with the gathered datas
-            initHomePage()
+          foods.map((food) => {
+            food.food_pic = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=${food.photos[0].photo_reference}&key=${apiKey}`;
+          });
+          console.log(foods);
+          // Select randomly the headline
+          // TODO LATER: Get it from recorded items from the BackEnd
+          headline = getRandomItem(foods, 1);
+          console.log(foods);
 
-		})
-		.catch(function(error) {
-			console.error(error);
-		})
+          // Select randomly the featured
+          // TODO LATER: Get them from recorded items from the BackEnd
+          featured = getRandomItem(foods, 6);
+
+          // Construct the Homepage with the gathered datas
+          initHomePage();
+        })
+        .catch((error) => {
+          console.error(error);
+        });
 
       // eslint-disable-next-line no-undef, array-callback-return
       foods.map((food) => {
@@ -95,7 +92,6 @@ function callFooding(pos) {
       // TODO LATER: Get them from recorded items from the BackEnd
       // eslint-disable-next-line no-undef
       featured = getRandomItem(foods, 6);
-
 
       // Construct the Homepage with the gathered datas
       // eslint-disable-next-line no-undef
