@@ -7,7 +7,7 @@ function createTags() {
     cards.innerHTML += `
         <button type="button" class="btn-card-tag" data-type="${tag.name}">
             <figure>
-                <img src="https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/${tag.slug}-71.png" alt="${tag.name}" />
+                <img src="./assets/images/quicktags/${tag.slug}.png" alt="${tag.name}" />
             </figure>
             <figcaption>${tag.name}</figcaption>
         </button>

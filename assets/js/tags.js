@@ -14,7 +14,7 @@ export const tags = [
     slug: 'restaurant',
   },
   {
-    name: 'lodging',
+    name: 'Lodging',
     slug: 'lodging',
   },
 ];
