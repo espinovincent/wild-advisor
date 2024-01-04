@@ -1,4 +1,5 @@
 /* eslint-disable import/prefer-default-export */
+// eslint-disable-next-line import/prefer-default-export
 export const tags = [
   {
     name: 'Cafe',
@@ -11,10 +12,9 @@ export const tags = [
   {
     name: 'Restaurant',
     slug: 'restaurant',
-  }
-  ,
+  },
   {
     name: 'lodging',
     slug: 'lodging',
-  }
+  },
 ];

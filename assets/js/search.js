@@ -1,10 +1,12 @@
-const searchWrapper = document.querySelector(".searchWrapper");
-const searchResultContain = searchWrapper.querySelector("#searchResult");
+/* eslint-disable no-undef */
+/* eslint-disable no-use-before-define */
+const searchWrapper = document.querySelector('.searchWrapper');
+const searchResultContain = searchWrapper.querySelector('#searchResult');
 
 function search(saisie) {
   let searchResult = [];
   if (saisie.length >= 1) {
-    searchWrapper.style.display = "block";
+    searchWrapper.style.display = 'block';
     searchResult = foods.filter((food) => {
       const isTypeMatch = food.types.some((type) =>
         type.includes(saisie.toLowerCase())
@@ -14,16 +16,17 @@ function search(saisie) {
         .includes(saisie.toLowerCase());
       return isNameMatch || isTypeMatch;
     });
-    searchResultContain.innerHTML = ``;
+    searchResultContain.innerHTML = '';
+    // eslint-disable-next-line array-callback-return
     searchResult.map((result) => {
       searchResultContain.innerHTML += createCartSearch(result);
     });
   } else {
-    searchWrapper.style.display = "none";
+    searchWrapper.style.display = 'none';
   }
 }
-const inputSearch = document.querySelector("#search-input");
-inputSearch.addEventListener("input", function (event) {
+const inputSearch = document.querySelector('#search-input');
+inputSearch.addEventListener('input', (event) => {
   saisie = event.target.value;
   search(saisie);
 });
