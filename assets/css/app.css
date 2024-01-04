@@ -238,10 +238,15 @@ body {
    }
    
    .infos .dollar img, .infos .rate img {
+    width: 25px;
      color: var(--accent-color-green);
      height: auto;
      min-width: 1%;
      justify-content: space-between;
+   }
+   
+   .dollar div {
+    background-color: var(--light-background);
    }
    
    .infos .rate {
@@ -254,13 +259,13 @@ body {
      height: auto;
    }
    
-   .infos .rate, .containerDollar, .divDollar {
+   .infos .rate {
      display: flex;
      justify-content: center;
      min-width: 50px;
      border-radius: 8px;
      background-color: var(--medium-background);
-     margin-top: 5px;
+     /* margin-top: 5px; */
      font-size: 22px;
      font-weight: 500;
    } 
