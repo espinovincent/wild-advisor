@@ -4,171 +4,169 @@
 
 html,
 body {
-    position: relative;
-    height: 100%;
-    min-height: 100%;
-    font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
 }
 
 #mainContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
 
 #mainWrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: var(--accent-color-green);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--accent-color-green);
 }
 
 .wrapperOverflow {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    scroll-behavior: smooth
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 #splashScreen.active,
 #homePage.active {
-    opacity: 1;
-    z-index: 500;
+  opacity: 1;
+  z-index: 500;
 }
 
 .yellowText {
-    color: var(--accent-color-yellow)
+  color: var(--accent-color-yellow);
 }
 
 .redText {
-    color: var(--accent-color-red)
+  color: var(--accent-color-red);
 }
 
 .rating {
-    padding: 1px 8px 1px 3px;
-    border-radius: 8px;
-    background: var(--light-background);
+  padding: 1px 8px 1px 3px;
+  border-radius: 8px;
+  background: var(--light-background);
 }
 
 .rating div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .rating div.rating-score span {
-    font-size: 16px;
-    color: var(--dark-text-color);
-    font-weight: 500;
+  font-size: 16px;
+  color: var(--dark-text-color);
+  font-weight: 500;
 }
 
 .rating div span img {
-    width: 20px;
-    height: auto;
-    margin-right: 5px;
+  width: 20px;
+  height: auto;
+  margin-right: 5px;
 }
 
-
 .star {
-    display: block;
-    width: 24px;
-    height: auto;
+  display: block;
+  width: 24px;
+  height: auto;
 }
 
 .star polygon {
-    fill: var(--accent-color-yellow);
+  fill: var(--accent-color-yellow);
 }
 
 /* *** ************************************************************************************* *** */
 /* *** * SPLASHSCREEN ********************************************************************** *** */
 /* *** ************************************************************************************* *** */
 #splashScreen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: stretch;
-    height: 100%;
-    opacity: 0;
-    background-color: var(--accent-color-green);
-    z-index: -1;
-    transition: all 400ms ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  opacity: 0;
+  background-color: var(--accent-color-green);
+  z-index: -1;
+  transition: all 400ms ease-out;
 }
 
 #splashScreen .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 370px;
-    height: 100%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 370px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #splashScreen .container h1 figure {
-    width: 100%;
-    max-width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 #splashScreen .container h1 figure figcaption {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 32px;
-    color: var(--light-text-color);
-    text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: var(--light-text-color);
+  text-align: center;
 }
 
 #splashScreen .container h1 figure figcaption span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 #splashScreen .container h1 figure img {
-    display: block;
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    margin-bottom: 16px;
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 16px;
 }
 
 #splashScreen .container button#enterButton {
-    width: 100%;
-    max-width: 300px;
-    height: 48px;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--dark-text-color);
-    margin: 0 auto;
-    border: none;
-    border-radius: 48px;
-    background: var(--light-background);
-    cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-text-color);
+  margin: 0 auto;
+  border: none;
+  border-radius: 48px;
+  background: var(--light-background);
+  cursor: pointer;
 }
-
 
 /* *** ************************************************************************************* *** */
 /* *** * HOMEPAGE ************************************************************************** *** */
 /* *** ************************************************************************************* *** */
 #homePage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    background: var(--light-background);
-    z-index: -1;
-    transition: all 400ms ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: var(--light-background);
+  z-index: -1;
+  transition: all 400ms ease-out;
 }
 /* *** ************************************************************************************* *** */
 /* *** * headline ************************************************************************** *** */
@@ -288,326 +286,314 @@ body {
 /* *** * HEADER ************************************************************************** *** */
 /* *** ************************************************************************************* *** */
 header ul {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    height: 48px;
-    margin: 20px;
-    border-radius: 5px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 48px;
+  margin: 20px;
+  border-radius: 5px;
+}
 
+#logoBlack {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 48px;
+}
 
-  #logoBlack {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    max-height: 48px;
-  }
 
 #logoBlack -container {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
 }
 #user-btn {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background-color: transparent;
-    border-radius: 5px;
-    border: 1px solid #d9d9d9;
-    cursor: pointer;
-
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
 }
 #show-search-btn {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background-color: transparent;
-    border-radius: 5px;
-    border: 1px solid #d9d9d9;
-    cursor: pointer;
-
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
 }
 
 #search-form {
-    display: none;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    font-size: 16px;
-    box-sizing: border-box;
-    overflow: hidden;
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  font-size: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 #search-container {
-    text-align: center;
-    height: 48px;
-
+  text-align: center;
+  height: 48px;
 }
 #search-input-form {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 48px;
-    border-radius: 5px;
-    border: 1px solid #d9d9d9;
-   
-
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
 }
 #search-input {
-    height: 100%;
-    min-width: 280px;
+  height: 100%;
+  min-width: 280px;
 }
 
 #submit-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    border: none;
-    object-fit: contain;
-    background-color: transparent;
-    
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  border: none;
+  object-fit: contain;
+  background-color: transparent;
 }
 
 .hide-btn {
-    display: none;
+  display: none;
 }
 
- 
 /* *** ************************************************************************************* *** */
 /* *** * TAGS ************************************************************************** *** */
 /* *** ************************************************************************************* *** */
 
-
 .cards-tag {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
-    padding: 5px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  padding: 5px;
 }
 
 .btn-card-tag {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    flex-direction: column;
-    gap: 5px;
-    border-radius: 5px;
-    background-color: var(--medium-background);
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    border: none;
-    cursor: pointer;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 5px;
+  background-color: var(--medium-background);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
 
-    &:hover {
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    }
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
 }
 
-.btn-card-tag>figure:has(img) {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--light-background);
-    border-radius: 50%;
+.btn-card-tag > figure:has(img) {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-background);
+  border-radius: 50%;
 }
 
 .btn-card-tag img {
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
 }
-
-
 
 /* *** ************************************************************************************* *** */
 /* *** * FEATURED ************************************************************************** *** */
 /* *** ************************************************************************************* *** */
 #featuredHome {
-    padding: 20px;
+  padding: 20px;
 }
 
 #featuredHome h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--dark-text-color);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--dark-text-color);
 }
 
 #featuredHomeList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 
 #featuredHomeList li {
-    width: 47.5%;
-    height: 100%;
-    margin-bottom: 20px;
+  width: 47.5%;
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 #featuredHomeList li article {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    background: var(--medium-background);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--medium-background);
 }
 
 #featuredHomeList li article h3 {
-    font-size: 16px;
-    color: var(--dark-text-color);
+  font-size: 16px;
+  color: var(--dark-text-color);
 }
 
 #featuredHomeList li article figure {
-    position: relative;
-    width: 100%;
-    border-radius: 8px;
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
 }
 
 #featuredHomeList li article figure img.cover {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #featuredHomeList li article figure figcaption {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 #featuredHomeList li article h3 {
-    font-size: 16px;
-    color: var(--dark-text-color);
-    font-weight: 600;
-    padding: 10px 0;
+  font-size: 16px;
+  color: var(--dark-text-color);
+  font-weight: 600;
+  padding: 10px 0;
 }
 
 /* *** ************************************************************************************* *** */
 /* *** * BOTTOM BAR ************************************************************************** *** */
 /* *** ************************************************************************************* *** */
 .bottom-bar {
-    position: fixed;
-    bottom: 2.5%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--dark-background);
-    padding: 15px;
-    width: 70%;
-    border-radius: 2rem;
-    z-index: 600;
-    max-width: 350px;
+  position: fixed;
+  bottom: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--dark-background);
+  padding: 15px;
+  width: 70%;
+  border-radius: 2rem;
+  z-index: 600;
+  max-width: 350px;
 }
 
 .bottom-bar ul {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .bottom-bar button {
-    background-color: transparent;
-    border: none;
-    width: 32px;
-    height: 32px;
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
-
 
 /* *** ************************************************************************************* *** */
 /* *** * MENTIONS LEGALES ****************************************************************** *** */
 /* *** ************************************************************************************* *** */
 #legales {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
 }
 
 #legales.show {
-    z-index: 800;
+  z-index: 800;
 }
 
 #legales .wrapPopin {
-    position: relative;
-    padding: 15px;
-    border-radius: 8px;
-    background: var(--light-background);
+  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+  background: var(--light-background);
 }
 
 #legales .wrapPopin .closePopin {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 32px;
-    height: 32px;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 0;
-    color: var(--dark-text-color);
-    border: none;
-    background: none;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 0;
+  color: var(--dark-text-color);
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 #legales .wrapPopin .contextPopin p {
-    font-size: 16px;
-    font-weight: normal;
-    text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
 }
 
 #legales .wrapPopin .contextPopin p span.wild {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #legales .wrapPopin .contextPopin p span.title {
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-top: 30px;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 30px;
 }
-
 
 /* *** ************************************************************************************* *** */
 /* *** * FOOTER **************************************************************************** *** */
 /* *** ************************************************************************************* *** */
 footer {
-    position: fixed;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 800;
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 800;
 }
 
 footer button {
-    font-size: 16px;
-    color: var(--dark-text-color);
-    border: none;
-    background: none;
-    cursor: pointer;
+  font-size: 16px;
+  color: var(--dark-text-color);
+  border: none;
+  background: none;
+  cursor: pointer;
 }

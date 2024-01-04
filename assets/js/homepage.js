@@ -1,6 +1,11 @@
-//## What to do while the user us busy with the SplashScreen
+// ## What to do while the user us busy with the SplashScreen
 //   Getting the whole app ready for him to say 'Wow', without waiting a split second
+// eslint-disable-next-line no-unused-vars
 function initHomePage() {
+  // eslint-disable-next-line no-undef, array-callback-return
+  featured.map((feat) => {
+    // eslint-disable-next-line max-len
+    // TODO LATER: Add a button around the whole element, leading to the restaurant's page with details
 
     createHeadline(headline[0]);
 
@@ -14,38 +19,48 @@ function initHomePage() {
             featRating.classList.add('rating')
             featRating.innerHTML = `<div class="rating-score">
                                         <span><img src="assets/images/template/star.svg" class="star" alt="${Math.trunc(feat.rating)}" title="${Math.trunc(feat.rating)}"></span>
+
+    // Create figcaption containing the rate and the star
+    const featRating = document.createElement('figcaption');
+    featRating.classList.add('rating');
+    featRating.innerHTML = `<div class="rating-score">
+                                        <span><img src="assets/images/template/star.svg" class="star" alt="${Math.trunc(
+    feat.rating,
+  )}" title="${Math.trunc(
+  feat.rating,
+)}"></span>
+
                                         <span>${feat.rating}</span>
-                                    </div>`
+                                    </div>`;
 
-        // Create the image and its ajdointed background
-        let featImage = document.createElement('img')
-            featImage.classList.add('cover')
-            featImage.setAttribute('src', 'assets/images/template/featured-blank.webp')
-            featImage.setAttribute('alt', feat.name)
-            featImage.setAttribute('title', feat.name)
-            featImage.setAttribute('style', `background-image: url(${feat.food_pic})`)
+    // Create the image and its ajdointed background
+    const featImage = document.createElement('img');
+    featImage.classList.add('cover');
+    featImage.setAttribute('src', 'assets/images/template/featured-blank.webp');
+    featImage.setAttribute('alt', feat.name);
+    featImage.setAttribute('title', feat.name);
+    featImage.setAttribute('style', `background-image: url(${feat.food_pic})`);
 
-        // Put the image and rate in the figcaption
-        let featFigure = document.createElement('figure')
-            featFigure.appendChild(featImage)
-            featFigure.appendChild(featRating)
+    // Put the image and rate in the figcaption
+    const featFigure = document.createElement('figure');
+    featFigure.appendChild(featImage);
+    featFigure.appendChild(featRating);
 
-        // Create the name title
-        let featName = document.createElement('h3')
-            featName.textContent = feat.name
+    // Create the name title
+    const featName = document.createElement('h3');
+    featName.textContent = feat.name;
 
-        // Create the article and put the name and cover in it
-        let featArticle = document.createElement('article')
-            featArticle.appendChild(featFigure)
-            featArticle.appendChild(featName)
+    // Create the article and put the name and cover in it
+    const featArticle = document.createElement('article');
+    featArticle.appendChild(featFigure);
+    featArticle.appendChild(featName);
 
-        // Put everything together
-        let featItm = document.createElement('li')
-            featItm.classList.add('featured')
-            featItm.appendChild(featArticle)
+    // Put everything together
+    const featItm = document.createElement('li');
+    featItm.classList.add('featured');
+    featItm.appendChild(featArticle);
 
-        featuredHomeList.appendChild(featItm)
-
-    })
-
+    // eslint-disable-next-line no-undef
+    featuredHomeList.appendChild(featItm);
+  });
 }
