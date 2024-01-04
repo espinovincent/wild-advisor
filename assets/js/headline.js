@@ -14,6 +14,22 @@ function createHeadline(headline) {
                               </span>
                         <span>${headline.rating}</span>
                         </div>`
-      const dollar = document.querySelector('.dollar');
-      dollar.textContent = headline.price_level;
-}
+      
+      if (headline.price_level) {
+            const littleInfos = document.querySelector('.littleInfo');
+            const divDollar = document.createElement('div');
+            divDollar.classList.add('dollar');
+            littleInfos.appendChild(divDollar);
+            divDollar.innerHTML = `<div class="ratingHeadline">
+                                <span class="dollarImageContainer"></span>
+                          </div>`
+
+            const containerDollar = document.querySelector(".dollarImageContainer");
+            for (let index = 0; index < headline.price_level; index++) {
+                  const dollar = document.createElement('img');
+                  dollar.src = "assets/images/template/dollar-symbol.png"
+                  containerDollar.appendChild(dollar);
+            }
+            console.log(containerDollar,"containerDollar")
+      }
+} 

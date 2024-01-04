@@ -58,6 +58,7 @@ function callFooding(pos) {
             // Select randomly the headline
             // TODO LATER: Get it from recorded items from the BackEnd
             headline = getRandomItem(foods, 1)
+            console.log(foods);
             
             // Select randomly the featured
             // TODO LATER: Get them from recorded items from the BackEnd
