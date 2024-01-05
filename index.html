@@ -79,7 +79,7 @@
                     </div>
                   </div>
                 </li>
-                <li>
+                <li id="li-logo">
                   <div id="logo-container">
                     <img
                       src="assets/images/template/wild-advisor.webp"
@@ -102,37 +102,35 @@
             </header>
 
             <div class="login-container hidden" id="loginWrapper">
-              <div id="loginForm-container">
-                <form id="loginForm" onsubmit="return false;">
-                  <div class="form-group">
-                    <label for="username"></label>
-                    <input
-                      type="username"
-                      id="username"
-                      name="username"
-                      placeholder="Enter your e-mail"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="password"></label>
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      placeholder="Enter your password"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <button onclick="validateLogin()">Login</button>
-                  </div>
-                  <section id="login-container-other">
-                    <div>Forgot password</div>
-                    <div>Sign up</div>
-                  </section>
-                </form>
-              </div>
+              <form id="loginForm" onsubmit="return false;">
+                <div class="form-group">
+                  <label for="username"></label>
+                  <input
+                    type="username"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your e-mail"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password"></label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <button onclick="validateLogin()">Login</button>
+                </div>
+                <section id="login-container-other">
+                  <div>Forgot password</div>
+                  <div>Sign up</div>
+                </section>
+              </form>
             </div>
 
             <div class="cards-tag"></div>
