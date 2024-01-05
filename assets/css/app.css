@@ -275,7 +275,6 @@ header ul {
   padding-top: 25%;
 }
 
-
 .form-group {
   margin-bottom: 20px;
 }
@@ -310,7 +309,6 @@ header ul {
 input[type="username"] {
   text-align: center;
   font-size: 20px;
-
 }
 
 input[type="password"] {
@@ -320,9 +318,9 @@ input[type="password"] {
 
 #login-container-other {
   display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* *** ************************************************************************************* *** */
