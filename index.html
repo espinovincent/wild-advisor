@@ -71,7 +71,7 @@
                     </div>
                   </div>
                 </li>
-                <li>
+                <li id="li-logo">
                   <div id="logo-container">
                     <img
                       src="assets/images/template/wild-advisor.webp"
@@ -92,54 +92,52 @@
                 </li>
               </ul>
             </header>
-            <div class="container-home">
-              <div class="login-container hidden" id="loginWrapper">
-                <form id="loginForm" onsubmit="return false;">
-                  <div class="form-group">
-                    <label for="username"></label>
-                    <input
-                      type="username"
-                      id="username"
-                      name="username"
-                      placeholder="Enter your e-mail"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="password"></label>
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      placeholder="Enter your password"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <button onclick="validateLogin()">Login</button>
-                  </div>
-                  <section id="login-container-other">
-                    <div>Forgot password</div>
-                    <div>Sign up</div>
-                  </section>
-                </form>
-              </div>
-              <div class="cards-tag"></div>
-              <div id="featuredHome">
-                <h2>Featured</h2>
-                <ul id="featuredHomeList"></ul>
-              </div> 
-              <footer>
-                <button id="openLegales" type="button">Legal notices</button>
-              </footer>
+            <div class="login-container hidden" id="loginWrapper">
+              <form id="loginForm" onsubmit="return false;">
+                <div class="form-group">
+                  <label for="username"></label>
+                  <input
+                    type="username"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your e-mail"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password"></label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <button onclick="validateLogin()">Login</button>
+                </div>
+                <section id="login-container-other">
+                  <div>Forgot password</div>
+                  <div>Sign up</div>
+                </section>
+              </form>
             </div>
-            <div class="searchWrapper">
+
+            <div class="cards-tag"></div>
+
+            <div id="featuredHome">
+              <h2>Featured</h2>
+              <ul id="featuredHomeList"></ul>
+              
+                          <div class="searchWrapper">
               <div class="header">
                 <h2 class="titre">Result :</h2>
                 <div class="btn-close-search-wrapper">x</div>
               </div>
               <div id="searchResult">
               </div>
+
             </div>
             <div class="bottom-bar">
               <ul>
@@ -152,8 +150,9 @@
                     />
                   </button>
                 </li>
+                <!-- FEATURE NOT READY FOR DEMO!!
                 <li>
-                  <button type="button">
+                  <button type="button" id="historyBottomBar">
                     <img
                       src="assets/images/template/history-white.webp"
                       alt="History"
@@ -162,7 +161,7 @@
                   </button>
                 </li>
                 <li>
-                  <button type="button">
+                  <button type="button" id="favBottomBar">
                     <img
                       src="assets/images/template/favs-white.webp"
                       alt="Favorites"
@@ -170,6 +169,7 @@
                     />
                   </button>
                 </li>
+                -->
                 <li>
                   <button type="button" id="user-btn-bottom">
                     <img
