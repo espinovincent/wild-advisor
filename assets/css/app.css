@@ -32,8 +32,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
-  scroll-behavior: smooth;
 }
 
 #splashScreen.active,
@@ -304,6 +302,7 @@ header ul {
   height: 100px;
   overflow: hidden;
 }
+
 #user-btn {
   width: 100%;
   height: 100%;
@@ -313,6 +312,7 @@ header ul {
   border: 1px solid #d9d9d9;
   cursor: pointer;
 }
+
 #show-search-btn {
   display: block;
   width: 100%;
@@ -338,6 +338,7 @@ header ul {
   text-align: center;
   height: 48px;
 }
+
 #search-input-form {
   position: relative;
   display: flex;
@@ -346,6 +347,7 @@ header ul {
   border-radius: 5px;
   border: 1px solid #d9d9d9;
 }
+
 #search-input {
   height: 100%;
   min-width: 280px;
@@ -441,9 +443,9 @@ input[type="password"] {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 5px;
-  padding: 5px;
+  padding: 20px;
 }
 
 .btn-card-tag {
@@ -462,17 +464,23 @@ input[type="password"] {
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+
+    & figure:has(img) {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
-.btn-card-tag > figure:has(img) {
+.btn-card-tag>figure:has(img) {
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--light-background);
   border-radius: 50%;
+
 }
 
 .btn-card-tag img {
@@ -515,6 +523,10 @@ input[type="password"] {
   padding: 10px;
   border-radius: 8px;
   background: var(--medium-background);
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
 }
 
 #featuredHomeList li article h3 {
@@ -606,6 +618,7 @@ input[type="password"] {
   padding: 15px;
   border-radius: 8px;
   background: var(--light-background);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 #legales .wrapPopin .closePopin {
@@ -645,17 +658,175 @@ input[type="password"] {
 /* *** ************************************************************************************* *** */
 /* *** * FOOTER **************************************************************************** *** */
 /* *** ************************************************************************************* *** */
+
+.searchWrapper {
+  display: none;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  padding-bottom: 200px;
+  background-color: var(--light-background);
+  overflow-y: auto;
+
+  & h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark-text-color);
+  }
+}
+.searchWrapper>.header{
+  display: flex;
+  justify-content: space-between;
+}
+.btn-close-search-wrapper{
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 0;
+  color: var(--dark-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover{
+    background-color: var(--medium-background);
+  }
+}
+
+
+/* *** ************************************************************************************* *** */
+/* *** * CARD **************************************************************************** *** */
+/* *** ************************************************************************************* *** */
+.container-home{
+  width: 100%;
+  height: calc(100% - 80px);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+
+.card-result {
+  background-color: var(--light-background);
+  display: flex;
+  padding: 30px 0 30px 0;
+  position: relative;
+  border-bottom: 2px solid #656565;
+}
+
+.card-result .left {
+  width: 150px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 7px;
+  background-color: var(--medium-background);
+
+}
+
+.card-result .left div {
+  position: relative;
+}
+
+.card-result .left div>img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-result .left div>.btn-like {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background-color: none;
+  border: none;
+}
+
+.card-result .left>.note-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-result .left>.note-info>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-background);
+  padding: 2px 5px 2px 5px;
+  gap: 2px;
+  border-radius: 5px;
+}
+
+.card-result .left>.note-info>.rating-price{
+  color: green;
+}
+
+.card-result .right {
+  display: flex;
+  width: calc(100% - 150px);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+
+}
+
+.card-result .right .card-result-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-result-info>h2 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-result-info>p {
+  text-transform: uppercase;
+}
+
+
+.card-result .right .localisation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-result .right .localisation p {
+  width: 100%;
+  font-weight: 300;
+  font-size: small;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* *** ************************************************************************************* *** */
+/* *** * FOOTER **************************************************************************** *** */
+/* *** ************************************************************************************* *** */
 footer {
-  position: fixed;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 800;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 10px 20px;
 }
 
 footer button {
-  font-size: 16px;
+  font-size: 12px;
   color: var(--dark-text-color);
   border: none;
   background: none;
