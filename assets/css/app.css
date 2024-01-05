@@ -318,6 +318,12 @@ input[type="password"] {
   font-size: 20px;
 }
 
+#login-container-other {
+  display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* *** ************************************************************************************* *** */
 /* *** * TAGS ************************************************************************** *** */
