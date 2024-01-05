@@ -17,7 +17,7 @@ function createHeadline(headline) {
                           <span class="headline-span">${headline.rating}</span>
                           </div>`;
 
-  if (headline.price_level) {
+  /*if (headline.price_level) {
     const littleInfos = document.querySelector('.littleInfo');
     const divDollar = document.createElement('div');
     divDollar.classList.add('dollar');
@@ -29,10 +29,10 @@ function createHeadline(headline) {
     const containerDollar = document.querySelector('.dollarImageContainer');
 
     /* eslint no-plusplus: ["error", { "allowForLoopAfterthoughts": true }] */
-    for (let index = 0; index < headline.price_level; index++) {
+    /*for (let index = 0; index < headline.price_level; index++) {
       const dollar = document.createElement('img');
       dollar.src = 'assets/images/template/dollar-symbol.png';
       containerDollar.appendChild(dollar);
     }
-  }
+  }*/
 }
