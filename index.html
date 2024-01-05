@@ -94,7 +94,9 @@
             </header>
             <div class="container-home">
               <div class="login-container hidden" id="loginWrapper">
-                <form id="loginForm" onsubmit="return false;">
+                <div id="loginForm-container">
+                  <form id="loginForm" onsubmit="return false;">
+                  
                     <div class="form-group">
                         <label for="username"></label>
                         <input type="username" id="username" name="username" placeholder="Enter your e-mail" required>
@@ -106,28 +108,19 @@
                     <div class="form-group">
                         <button onclick="validateLogin()">Login</button>
                     </div>
-                </form>
-                <section id="login-container-other">
-                  <div>Forgot password</div>
-                  <div>Sign up</div>
-              </section>
-            </div>
-              <div class="cards-tag"></div>
-              <div id="featuredHome">
-                <h2>Featured</h2>
-                <ul id="featuredHomeList"></ul>
-              </div> 
-              <footer>
-                <button id="openLegales" type="button">Legal notices</button>
-              </footer>
-            </div>
-            <div class="searchWrapper">
-              <div class="header">
-                <h2 class="titre">Result :</h2>
-                <div class="btn-close-search-wrapper">x</div>
+                    <section id="login-container-other">
+                      <div>Forgot password</div>
+                      <div>Sign up</div>
+                    </section>                  
+                  </form>
+                </div>
               </div>
-              <div id="searchResult">
-              </div>
+
+            <div class="cards-tag"></div>
+
+            <div id="featuredHome">
+              <h2>Featured</h2>
+              <ul id="featuredHomeList"></ul>
             </div>
             <div class="bottom-bar">
               <ul>
