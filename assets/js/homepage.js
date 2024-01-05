@@ -3,6 +3,8 @@
 //   Getting the whole app ready for him to say 'Wow', without waiting a split second
 // eslint-disable-next-line no-unused-vars
 function initHomePage() {
+  // eslint-disable-next-line no-undef
+  createHeadline(headline[0]);
   // eslint-disable-next-line no-undef, array-callback-return
   featured.map((feat) => {
     // eslint-disable-next-line max-len
