@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 // ## What to do while the user us busy with the SplashScreen
 //   Getting the whole app ready for him to say 'Wow', without waiting a split second
 // eslint-disable-next-line no-unused-vars
