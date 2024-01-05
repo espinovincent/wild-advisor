@@ -102,7 +102,9 @@
             </header>
 
               <div class="login-container hidden" id="loginWrapper">
-                <form id="loginForm" onsubmit="return false;">
+                <div id="loginForm-container">
+                  <form id="loginForm" onsubmit="return false;">
+                  
                     <div class="form-group">
                         <label for="username"></label>
                         <input type="username" id="username" name="username" placeholder="Enter your e-mail" required>
@@ -114,12 +116,13 @@
                     <div class="form-group">
                         <button onclick="validateLogin()">Login</button>
                     </div>
-                </form>
-                <section id="login-container-other">
-                  <div>Forgot password</div>
-                  <div>Sign up</div>
-              </section>
-            </div>
+                    <section id="login-container-other">
+                      <div>Forgot password</div>
+                      <div>Sign up</div>
+                    </section>                  
+                  </form>
+                </div>
+              </div>
 
             <div class="cards-tag"></div>
 
