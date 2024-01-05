@@ -1,16 +1,16 @@
 /* eslint-disable no-use-before-define */
 // ## What to do once the DOM is loaded
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   // Entering main app from Splashcreen
   // eslint-disable-next-line no-undef
   enterButton.addEventListener(
-    "click",
+    'click',
     (e) => {
       e.preventDefault();
       // eslint-disable-next-line no-undef
-      splashscreen.classList.remove("active");
+      splashscreen.classList.remove('active');
       // eslint-disable-next-line no-undef
-      homepage.classList.add("active");
+      homepage.classList.add('active');
       return false;
     },
     false,
@@ -37,7 +37,7 @@ function resquestPosition() {
   } else {
     // Browser doesn't support Geolocation
     // eslint-disable-next-line no-console
-    console.error("Browser doesn’t support Geolocation");
+    console.error('Browser doesn’t support Geolocation');
   }
 }
 

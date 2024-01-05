@@ -1,8 +1,8 @@
 // eslint-disable-next-line import/extensions
-import { tags } from "./tags.js";
+import { tags } from './tags.js';
 
 function createTags() {
-  const cards = document.querySelector(".cards-tag");
+  const cards = document.querySelector('.cards-tag');
   tags.forEach((tag) => {
     cards.innerHTML += `
         <button type="button" class="btn-card-tag" data-type="${tag.name}">
