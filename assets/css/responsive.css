@@ -84,7 +84,7 @@
 
   h1 {
     margin-bottom: 20%;
-    font-size: 25px;
+    font-size: 20px;
     flex-wrap: nowrap;
   }
 
@@ -106,7 +106,10 @@
     display: grid;
     grid-column: 2/1;
     justify-content: flex-end;
-    align-items: flex-end;
+  }
+
+  span {
+    padding: 1px 3px 1px 3px;
   }
 
   .foodTag {
@@ -122,12 +125,16 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 4px;
   }
 
   .infos .rate,
   .infos .dollar {
     min-width: 35px;
+  }
+
+  .ratingHeadline div,
+  .dollarImageContainer span {
+    padding: 1px 8px 1px 3px;
   }
 
   .littleInfos div {

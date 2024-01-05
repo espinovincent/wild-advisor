@@ -201,14 +201,12 @@ body {
 }
 
 h1 {
-  color: var(--medium-background); /*variable*/
-  /*  font-size: 30px; */
+  color: var(--medium-background);
   font-size: 6vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-align: left;
   margin-top: 5px;
-  /* width: 50%; */
 }
 
 .globalInfos {
@@ -220,7 +218,6 @@ h1 {
   position: absolute;
   display: flex;
   flex-direction: column;
-  /* gap: 5px; */
   top: 0;
   right: 0;
   border-radius: 8px;
@@ -231,7 +228,7 @@ h1 {
   align-items: center;
   border-radius: 8px;
   color: var(--dark-text-color);
-  /* padding: 4px; */
+  gap: 4px;
   flex-direction: row;
 }
 
@@ -242,7 +239,6 @@ h1 {
   height: auto;
   min-width: 1%;
   justify-content: space-between;
-  flex-wrap: nowrap;
 }
 
 .dollar div {
@@ -255,9 +251,9 @@ h1 {
   font-size: 20px;
 }
 
-/*  span {
+ span {
      height: auto;
-   } */
+   }
 
 .infos .rate {
   display: flex;
