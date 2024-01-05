@@ -1,16 +1,16 @@
 /* eslint-disable no-use-before-define */
 // ## What to do once the DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   // Entering main app from Splashcreen
   // eslint-disable-next-line no-undef
   enterButton.addEventListener(
-    'click',
+    "click",
     (e) => {
       e.preventDefault();
       // eslint-disable-next-line no-undef
-      splashscreen.classList.remove('active');
+      splashscreen.classList.remove("active");
       // eslint-disable-next-line no-undef
-      homepage.classList.add('active');
+      homepage.classList.add("active");
       return false;
     },
     false,
@@ -37,7 +37,7 @@ function resquestPosition() {
   } else {
     // Browser doesn't support Geolocation
     // eslint-disable-next-line no-console
-    console.error('Browser doesn’t support Geolocation');
+    console.error("Browser doesn’t support Geolocation");
   }
 }
 
@@ -51,6 +51,31 @@ function callFooding(pos) {
     .then((data) => {
       // eslint-disable-next-line no-undef
       foods = data.results;
+
+      fetch(urlAPI)
+        .then((response) => response.json())
+        .then((data) => {
+          foods = data.results; /* Kanna */
+
+          foods.map((food) => {
+            food.food_pic = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=${food.photos[0].photo_reference}&key=${apiKey}`;
+          });
+          console.log(foods);
+          // Select randomly the headline
+          // TODO LATER: Get it from recorded items from the BackEnd
+          headline = getRandomItem(foods, 1);
+          console.log(foods);
+
+          // Select randomly the featured
+          // TODO LATER: Get them from recorded items from the BackEnd
+          featured = getRandomItem(foods, 6);
+
+          // Construct the Homepage with the gathered datas
+          initHomePage();
+        })
+        .catch((error) => {
+          console.error(error);
+        });
 
       // eslint-disable-next-line no-undef, array-callback-return
       foods.map((food) => {

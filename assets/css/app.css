@@ -166,6 +166,117 @@ body {
   z-index: -1;
   transition: all 400ms ease-out;
 }
+/* *** ************************************************************************************* *** */
+/* *** * headline ************************************************************************** *** */
+/* *** ************************************************************************************* *** */
+body {
+  padding: 5%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: var(--accent-color-green);
+}
+
+.container .photo {
+  width: 35%;
+  min-width: 35%;
+}
+
+.container .photo img {
+  max-height: 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+h1 {
+  color: var(--medium-background);
+  font-size: 6vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.globalInfos {
+  width: 100%;
+  position: relative;
+}
+
+.infos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  border-radius: 8px;
+}
+
+.infos div {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  color: var(--dark-text-color);
+  gap: 4px;
+  flex-direction: row;
+}
+
+.infos .dollar img,
+.infos .rate img {
+  width: 18px;
+  color: var(--accent-color-green);
+  height: auto;
+  min-width: 1%;
+  justify-content: space-between;
+}
+
+.dollar div {
+  background-color: var(--light-background);
+}
+
+.infos .rate {
+  top: 0;
+  right: 0;
+  font-size: 20px;
+}
+
+ span {
+     height: auto;
+   }
+
+.infos .rate {
+  display: flex;
+  justify-content: center;
+  min-width: 50px;
+  border-radius: 8px;
+  background-color: var(--medium-background);
+  /* margin-top: 5px; */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ratingHeadline div {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleFood {
+  background: red;
+}
+
+.foodTag {
+  display: none;
+}
+/* headline */
 
 /* *** ************************************************************************************* *** */
 /* *** * HEADER ************************************************************************** *** */
