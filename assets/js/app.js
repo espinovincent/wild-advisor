@@ -14,5 +14,5 @@ const homepage = document.querySelector('#homePage');
 const featuredHomeList = document.querySelector('#featuredHomeList');
 
 // ## Items and details settled to variables
-const foods = featured = [];
-const pos = headline = null;
+let foods = featured = [];
+let pos = headline = null;

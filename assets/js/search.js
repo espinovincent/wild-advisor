@@ -2,15 +2,17 @@
 /* eslint-disable no-use-before-define */
 const searchWrapper = document.querySelector('.searchWrapper');
 const searchResultContain = searchWrapper.querySelector('#searchResult');
+const btnCloseSearchWrapper = document.querySelector('.btn-close-search-wrapper');
 
+btnCloseSearchWrapper.addEventListener('click', () => {
+  searchWrapper.style.display = 'none';
+});
 function search(saisie) {
   let searchResult = [];
   if (saisie.length >= 1) {
     searchWrapper.style.display = 'block';
     searchResult = foods.filter((food) => {
-      const isTypeMatch = food.types.some((type) =>
-        type.includes(saisie.toLowerCase())
-      );
+      const isTypeMatch = food.types.some((type) => type.includes(saisie.toLowerCase()));
       const isNameMatch = food.name
         .toLowerCase()
         .includes(saisie.toLowerCase());
@@ -37,19 +39,21 @@ function createCartSearch(card) {
     <div class="left">
       <div>
         <img
-          src="${card.food_pic}"
-          alt="${Math.trunc(card.food_pic)}"/>
+        src='assets/images/template/featured-blank.webp'
+    
+          alt="${Math.trunc(card.food_pic)}"
+          style="background-image: url(${card.food_pic})"/>
         <button class="btn-like">
         </button>
       </div>
-      <div>
+      <div class="note-info">
         <div class="rating-score">
             <span><img src="assets/images/template/star.svg" class="star" alt="${Math.trunc(
-              card.rating
-            )}" title="${Math.trunc(card.rating)}"></span>
+    card.rating,
+  )}" title="${Math.trunc(card.rating)}"></span>
             <span>${card.rating}</span>
         </div>
-        <div>$$$</div>
+        ${card.price_level ? `<div class="rating-price">${'$'.repeat(card.price_level)}</div>` : ''}
       </div>
     </div>
 
@@ -57,11 +61,11 @@ function createCartSearch(card) {
       <div class="card-result-info">
         <h2>${card.name}</h2>
         <p>${card.vicinity}</p>
+        <div class="localisation">
+        <p>${card.types.map((type) => type)}</p>
       </div>
-      <div class="localisation">
-        <p>702m from your position</p>
-        <button>maps</button>
       </div>
+
     </div>
   </div>`;
 }
